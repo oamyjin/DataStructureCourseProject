@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="624.0" prefWidth="547.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.EnterController">
+    <children>
+        <ImageView fitHeight="397.0" fitWidth="549.0" layoutY="-8.0">
+            <image>
+                <Image url="@../source/index.jpg" />
+            </image>
+        </ImageView>
+        <Label fx:id="w" layoutX="259.0" layoutY="345.0" prefHeight="23.0" prefWidth="233.0" text="请输入正确用户账号和密码" textFill="#f52828" visible="false">
+            <font>
+                <Font size="13.0" />
+            </font>
+        </Label>
+      <Pane layoutY="389.0" onMouseClicked="#tourist" prefHeight="235.0" prefWidth="280.0" style="-fx-background-color: #77cccc;">
+         <children>
+            <Label layoutX="88.0" layoutY="76.0" prefHeight="83.0" prefWidth="105.0" text="游客入口">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="275.0" layoutY="389.0" onMouseClicked="#login" prefHeight="235.0" prefWidth="274.0" style="-fx-background-color: #ccdddd;">
+         <children>
+            <Label layoutX="69.0" layoutY="76.0" prefHeight="83.0" prefWidth="136.0" text="管理员入口">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label layoutX="131.0" layoutY="312.0" text="景点信息管理系统" textFill="#ffffffe5">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

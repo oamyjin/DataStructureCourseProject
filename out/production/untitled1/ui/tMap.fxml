@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="486.0" prefWidth="86.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MapController">
+   <children>
+      <Pane prefHeight="82.0" prefWidth="780.0" style="-fx-background-color: #bee3da;">
+         <children>
+            <ImageView fitHeight="38.0" fitWidth="46.0" layoutX="14.0" layoutY="23.0" onMouseClicked="#back">
+               <image>
+                  <Image url="@../source/back.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="271.0" layoutY="19.0" prefHeight="47.0" prefWidth="188.0" text="景点分布图" textFill="#064650">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label fx:id="aNC" layoutX="10.0" layoutY="129.0" />
+      <Label fx:id="aNR" layoutX="70.0" layoutY="101.0" />
+      <Text fx:id="aM" layoutX="71.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="624.0" prefWidth="547.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.TouristController">
+   <children>
+      <Pane onMouseClicked="#tMap" prefHeight="82.0" prefWidth="768.0" style="-fx-background-color: #bee3da;">
+         <children>
+            <ImageView fitHeight="38.0" fitWidth="46.0" layoutX="14.0" layoutY="23.0" onMouseClicked="#back">
+               <image>
+                  <Image url="@../source/back.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="239.0" layoutY="19.0" prefHeight="47.0" prefWidth="291.0" text="景点查询管理系统" textFill="#064650">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label fx:id="adminName" layoutX="666.0" layoutY="95.0" prefHeight="15.0" prefWidth="102.0" />
+      <Pane layoutX="141.0" layoutY="192.0" onMouseClicked="#tAttraction" prefHeight="160.0" prefWidth="239.0" style="-fx-background-color: #97d2f6;">
+         <children>
+            <Label layoutX="70.0" layoutY="64.0" text="景点信息">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="388.0" layoutY="360.0" onMouseClicked="#park" prefHeight="160.0" prefWidth="239.0" style="-fx-background-color: #1e96e0;">
+         <children>
+            <Label layoutX="70.0" layoutY="64.0" text="停车服务">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="388.0" layoutY="192.0" onMouseClicked="#tRoute" prefHeight="160.0" prefWidth="239.0" style="-fx-background-color: #63bdf2;">
+         <children>
+            <Label layoutX="70.0" layoutY="64.0" text="路线信息">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="141.0" layoutY="360.0" onMouseClicked="#tMap" prefHeight="160.0" prefWidth="239.0" style="-fx-background-color: #CCCCCC;">
+         <children>
+            <Label layoutX="57.0" layoutY="64.0" text="景点分布图">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

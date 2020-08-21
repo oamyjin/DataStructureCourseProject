@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="624.0" prefWidth="547.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AdminController">
+    <children>
+      <Pane prefHeight="82.0" prefWidth="768.0" style="-fx-background-color: #bee3da;">
+         <children>
+             <ImageView fitHeight="38.0" fitWidth="46.0" layoutX="14.0" layoutY="23.0" onMouseClicked="#back">
+             <image>
+                 <Image url="@../source/back.png" />
+             </image>
+         </ImageView>
+              <Label layoutX="239.0" layoutY="19.0" prefHeight="47.0" prefWidth="291.0" text="景点信息管理系统" textFill="#064650">
+                  <font>
+                      <Font size="36.0" />
+                  </font>
+              </Label>
+         </children>
+      </Pane>
+      <Label fx:id="adminName" layoutX="666.0" layoutY="95.0" prefHeight="15.0" prefWidth="102.0" />
+      <Pane layoutX="221.0" layoutY="197.0" onMouseClicked="#attraction" prefHeight="89.0" prefWidth="327.0" style="-fx-background-color: #97d2f6;">
+         <children>
+            <Label layoutX="114.0" layoutY="28.0" text="景点信息">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="221.0" layoutY="414.0" onMouseClicked="#warning" prefHeight="89.0" prefWidth="327.0" style="-fx-background-color: #1e96e0;">
+         <children>
+            <Label layoutX="114.0" layoutY="28.0" text="发布公告">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="221.0" layoutY="306.0" onMouseClicked="#route" prefHeight="89.0" prefWidth="327.0" style="-fx-background-color: #63bdf2;">
+         <children>
+            <Label layoutX="114.0" layoutY="28.0" text="路线信息">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+    </children>
+</AnchorPane>

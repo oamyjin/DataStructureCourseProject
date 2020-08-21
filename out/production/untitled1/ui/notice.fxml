@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="624.0" prefWidth="547.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.NoticeController">
+   <children>
+      <Label layoutX="43.0" layoutY="110.0" text="发布新通告：" />
+      <TextField fx:id="content" layoutX="43.0" layoutY="135.0" prefHeight="114.0" prefWidth="454.0" />
+      <TextField fx:id="tW" layoutX="139.0" layoutY="265.0" prefHeight="23.0" prefWidth="105.0" promptText="景区名称" />
+      <Pane layoutX="-1.0" prefHeight="82.0" prefWidth="547.0" style="-fx-background-color: #bee3da;">
+         <children>
+            <ImageView fitHeight="38.0" fitWidth="46.0" layoutX="14.0" layoutY="23.0" onMouseClicked="#back">
+               <image>
+                  <Image url="@../source/back.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="234.0" layoutY="19.0" prefHeight="47.0" prefWidth="147.0" text="景点信息" textFill="#064650">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <TableView fx:id="tbN" layoutX="43.0" layoutY="370.0" prefHeight="200.0" prefWidth="454.0">
+        <columns>
+          <TableColumn fx:id="cT" prefWidth="147.0" text="时间" />
+          <TableColumn fx:id="cC" prefWidth="233.0" text="内容" />
+            <TableColumn fx:id="cTW" prefWidth="73.0" text="景区" />
+        </columns>
+      </TableView>
+      <Label layoutX="43.0" layoutY="340.0" text="所有公告：" />
+      <Label layoutX="43.0" layoutY="269.0" text="请输入发布对象：" />
+      <Button layoutX="234.0" layoutY="265.0" mnemonicParsing="false" onAction="#publish" prefHeight="23.0" prefWidth="72.0" text="发布" />
+   </children>
+</AnchorPane>

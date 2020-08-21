@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="484.0" prefWidth="369.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AddAController">
+   <children>
+      <Label layoutX="110.0" layoutY="38.0" text="景点信息录入">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <GridPane layoutX="57.0" layoutY="100.0" prefHeight="158.0" prefWidth="248.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="95.0" minWidth="10.0" prefWidth="90.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="155.0" minWidth="10.0" prefWidth="155.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="34.0" minHeight="10.0" prefHeight="27.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="41.0" minHeight="10.0" prefHeight="32.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="42.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="44.0" minHeight="10.0" prefHeight="29.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label prefHeight="15.0" prefWidth="42.0" text="名称：" GridPane.halignment="RIGHT" />
+            <Label prefHeight="15.0" prefWidth="43.0" text="热度：" GridPane.halignment="RIGHT" GridPane.rowIndex="1" />
+            <Label prefHeight="15.0" prefWidth="66.0" text="有无公厕：" GridPane.halignment="RIGHT" GridPane.rowIndex="2" />
+            <Label prefHeight="15.0" prefWidth="78.0" text="有无休息区：" GridPane.halignment="RIGHT" GridPane.rowIndex="3" />
+            <TextField fx:id="addAN" prefHeight="23.0" prefWidth="136.0" GridPane.columnIndex="1" />
+            <TextField fx:id="addAP" promptText="请输入整数" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <MenuButton fx:id="addAHWC" mnemonicParsing="false" prefHeight="23.0" prefWidth="154.0" text="有" GridPane.columnIndex="1" GridPane.rowIndex="2">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#setHWCY" text="有" />
+                <MenuItem mnemonicParsing="false" onAction="#setHWCN" text="无" />
+              </items>
+            </MenuButton>
+            <MenuButton fx:id="addAHR" mnemonicParsing="false" prefHeight="23.0" prefWidth="154.0" text="有" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#setHRY" text="有" />
+                  <MenuItem mnemonicParsing="false" onAction="#setHRN" text="无" />
+               </items>
+            </MenuButton>
+         </children>
+      </GridPane>
+      <TextField fx:id="addAD" layoutX="151.0" layoutY="270.0" prefHeight="117.0" prefWidth="155.0" />
+      <Label layoutX="60.0" layoutY="266.0" text="景点具体介绍：" />
+      <Button layoutX="154.0" layoutY="427.0" mnemonicParsing="false" onAction="#addASure" text="确认提交" />
+   </children>
+</AnchorPane>

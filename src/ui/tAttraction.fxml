@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="624.0" prefWidth="547.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.TAttractionController">
+   <children>
+      <Pane prefHeight="82.0" prefWidth="614.0" style="-fx-background-color: #bee3da;">
+         <children>
+            <ImageView fitHeight="38.0" fitWidth="46.0" layoutX="14.0" layoutY="23.0" onMouseClicked="#back">
+               <image>
+                  <Image url="@../source/back.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="234.0" layoutY="19.0" prefHeight="47.0" prefWidth="147.0" text="景点信息" textFill="#064650">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutY="372.0" prefHeight="245.0" prefWidth="614.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <Pane fx:id="infoOne" layoutX="18.0" layoutY="37.0" prefHeight="210.0" prefWidth="579.0" style="-fx-background-color: #ffffff;">
+               <children>
+                  <Label fx:id="aD" layoutX="90.0" layoutY="47.0" />
+                  <Label fx:id="aHR" layoutX="510.0" layoutY="20.0" />
+                  <Label fx:id="aP" layoutX="205.0" layoutY="20.0" />
+                  <Label fx:id="aHWC" layoutX="360.0" layoutY="20.0" />
+                  <Label layoutX="22.0" layoutY="84.0" text="相关公告：" />
+                  <Label layoutX="23.0" layoutY="22.0" text="名称：" />
+                  <Label fx:id="aN" layoutX="66.0" layoutY="20.0" />
+                  <Label layoutX="166.0" layoutY="22.0" text="热度：" />
+                  <Label layoutX="295.0" layoutY="22.0" text="有无公厕：" />
+                  <Label layoutX="431.0" layoutY="22.0" text="有无休息区：" />
+                  <Label layoutX="22.0" layoutY="48.0" text="景点描述：" />
+                  <TableView fx:id="tbN" layoutX="23.0" layoutY="105.0" prefHeight="99.0" prefWidth="506.0">
+                    <columns>
+                      <TableColumn fx:id="cNT" prefWidth="180.0" text="发布时间" />
+                      <TableColumn fx:id="cNC" prefWidth="404.0" text="公告内容" />
+                    </columns>
+                  </TableView>
+               </children>
+            </Pane>
+            <TextField fx:id="queryOneKeyWord" layoutX="148.0" layoutY="10.0" prefHeight="23.0" prefWidth="120.0" />
+            <Button layoutX="261.0" layoutY="10.0" mnemonicParsing="false" onAction="#queryOne" prefHeight="23.0" prefWidth="68.0" text="查看信息" />
+            <Label layoutX="38.0" layoutY="14.0" text="请输入景点名称：" />
+         </children>
+      </Pane>
+      <Pane layoutX="2.0" layoutY="86.0" prefHeight="245.0" prefWidth="614.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <TableView fx:id="tbA" layoutX="10.0" layoutY="46.0" prefHeight="178.0" prefWidth="585.0">
+               <columns>
+                  <TableColumn fx:id="cAN" prefWidth="92.0" text="景点名称" />
+                  <TableColumn fx:id="cAD" minWidth="0.0" prefWidth="343.0" text="景点描述" />
+                  <TableColumn fx:id="cAP" minWidth="0.0" prefWidth="47.0" text="热度" />
+                  <TableColumn fx:id="cAR" prefWidth="50.0" text="休息区" />
+                  <TableColumn fx:id="cAW" prefWidth="45.0" text="公厕" />
+               </columns>
+            </TableView>
+            <Label layoutX="23.0" layoutY="19.0" text="请输入关键字：" />
+            <TextField fx:id="queryKeyWord" layoutX="110.0" layoutY="15.0" prefHeight="23.0" prefWidth="147.0" />
+            <Button layoutX="254.0" layoutY="15.0" mnemonicParsing="false" onAction="#queryA" prefHeight="23.0" prefWidth="68.0" text="检索" />
+            <MenuButton fx:id="type" layoutX="400.0" layoutY="15.0" mnemonicParsing="false" text="欢迎度">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#setTPop" text="欢迎度" />
+                <MenuItem mnemonicParsing="false" onAction="#setTHW" text="有公厕" />
+                  <MenuItem mnemonicParsing="false" onAction="#setTHR" text="有休息区" />
+              </items>
+            </MenuButton>
+            <Label layoutX="340.0" layoutY="19.0" text="排序方式：" />
+         </children>
+      </Pane>
+      <Pane layoutX="-4.0" layoutY="338.0" prefHeight="29.0" prefWidth="36.0" style="-fx-background-color: #bee3da;" />
+      <Pane layoutX="155.0" layoutY="338.0" prefHeight="29.0" prefWidth="443.0" style="-fx-background-color: #bee3da;" />
+      <Label layoutX="38.0" layoutY="343.0" text="查询单个景点信息">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

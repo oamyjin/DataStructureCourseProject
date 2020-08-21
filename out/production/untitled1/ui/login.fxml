@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="389.0" prefWidth="316.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.EnterController">
+   <children>
+      <GridPane layoutX="46.0" layoutY="145.0" prefHeight="83.0" prefWidth="233.0">
+         <children>
+            <Label prefHeight="33.0" prefWidth="91.0" text="用户账号：">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label prefHeight="33.0" prefWidth="94.0" text="登录密码：" GridPane.rowIndex="1">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="uN" prefHeight="23.0" prefWidth="145.0" GridPane.columnIndex="1" />
+            <PasswordField fx:id="ps" prefHeight="23.0" prefWidth="145.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+         </children>
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="106.0" minWidth="10.0" prefWidth="88.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="186.0" minWidth="10.0" prefWidth="145.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="49.0" minHeight="10.0" prefHeight="39.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="71.0" minHeight="10.0" prefHeight="71.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+      </GridPane>
+      <Label layoutX="73.0" layoutY="14.0" prefHeight="77.0" prefWidth="171.0" text="管理员账号登录">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Button fx:id="enterButton" layoutX="46.0" layoutY="262.0" mnemonicParsing="false" onAction="#admin" prefHeight="28.0" prefWidth="233.0" text="进入" />
+      <Label fx:id="w" layoutX="46.0" layoutY="220.0" prefHeight="28.0" prefWidth="233.0" text="请输入正确用户账号和密码" textFill="#f52828" visible="false">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
